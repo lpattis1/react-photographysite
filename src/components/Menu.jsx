@@ -69,7 +69,7 @@ const Menu = (props) => {
           <div className="col col-lg-3 col-12 menu-col d-flex justify-content-center align-items-center">
             <div className="menu-link text-center">
               <Link className="ads menu-link-direct" exact to="/ads">
-                Commercial
+                Ads
               </Link>
             </div>
           </div>
