@@ -80,7 +80,7 @@ const Ads = () => {
             <h3 className="ads-logo text-center m-auto">KCM Photography</h3>
             <div className="nav-container d-flex justify-content-end">
               <Fade delay={500}>
-                <h3 className="women-text">Commercial</h3>
+                <h3 className="women-text">Ads</h3>
               </Fade>
               <Nav click={toggleMenu} />
             </div>

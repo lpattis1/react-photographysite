@@ -30,11 +30,7 @@ const Films = () => {
   return (
     <>
       <Fade triggerOnce={true} delay={500}>
-        <div
-          style={{ position: "relative" }}
-          id="films"
-          className="d-flex flex-column justify-content-center align-items-center"
-        >
+        <div style={{ position: "relative" }} id="films">
           <div className=" mt-5 container films-container d-flex justify-content-between align-items-center">
             <h3 className="films-logo text-center m-auto">KCM Photography</h3>
             <div className="nav-container d-flex justify-content-end">
@@ -45,14 +41,18 @@ const Films = () => {
             </div>
           </div>
 
-          <header className="films-header  mt-5">
+          <header
+            style={{ position: "relative" }}
+            className="films-header   mt-5"
+          >
             <video
               className="header-vid"
               autoPlay
               loop
               muted
               style={{
-                position: "absolute",
+                position: "relative",
+
                 width: "100%",
                 height: "65vh",
                 left: "0",
@@ -63,29 +63,32 @@ const Films = () => {
             >
               <source src="https://i.imgur.com/IxLP3y7.mp4" type="video/mp4" />
             </video>
-            <div className="container vid-container d-flex justify-content-center align-items-center">
-              <div className="vid-text text-center">
-                <h1 className="film-header-title">Lot30</h1>
-                <p className="film-description-one">
-                  KCM proudly presents LOT30, a full service production company
-                  which specialises in producing high quality, immersive,
-                  cinematic films for a wide range of digital platforms.
-                </p>
-                <div className="btn-location mt-3">
-                  <button className="view-films-btn btn">
-                    <a href="#showreel" className="view-films-jump">
-                      View Films
-                      <BsFillArrowDownCircleFill className="btn-icon" />
-                    </a>
-                  </button>
+            <div className=" vid-container">
+              <div className="vid-text text-center d-flex flex-column justify-content-center align-items-center">
+                <div className="vid-content d-flex flex-column justify-content-center align-items-center">
+                  <h1 className="film-header-title">Lot30</h1>
+                  <p className="film-description-one">
+                    KCM proudly presents LOT30, a full service production
+                    company which specialises in producing high quality,
+                    immersive, cinematic films for a wide range of digital
+                    platforms.
+                  </p>
+                  <div className="btn-location mt-3">
+                    <button className="view-films-btn btn">
+                      <a href="#showreel" className="view-films-jump">
+                        View Films
+                        <BsFillArrowDownCircleFill className="btn-icon" />
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </header>
 
           <Fade delay={300}>
-            <div id="showreel" className="showreel mt-5">
-              <div className="container showreel-container">
+            <div id="showreel" className="showreel">
+              <div className="container showreel-container d-flex flex-column justify-content-center align-items-center">
                 <h2 className="showreel-title">Latest Video</h2>
                 <video controls className="latest-video">
                   <source

@@ -292,14 +292,27 @@
   margin-bottom: 5rem;
 }
 
+.vid-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.vid-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-vid:hover {
   transition: 0.3s ease-in-out;
   filter: grayscale(100%);
   cursor: pointer;
-}
-
-.vid-text {
-  margin-top: 6rem;
 }
 
 .film-header-title {
@@ -343,7 +356,7 @@
 }
 
 .showreel {
-  margin-top: 10rem !important;
+  margin-top: 5rem !important;
 }
 
 .latest-video {
@@ -356,7 +369,6 @@
 
 #about {
   position: relative !important;
-  height: 100vh;
 }
 
 #about .nav-bars {
@@ -389,7 +401,8 @@
 }
 
 .about-section {
-  margin-top: 6rem;
+  margin-top: 7rem;
+  height: 100vh;
 }
 
 .about-kcm {

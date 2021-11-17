@@ -63,7 +63,11 @@ const About = () => {
                 </p>
                 <p className="about-kcm-three about-kcm">
                   Behind the sheer beauty of his images, there is a cerebral
-                  layer of personal experience which informs all he does.
+                  layer of personal experience which informs all he does. As one
+                  onlooker commented after seeing his Paris “Winds and Sails”
+                  exhibition for Louis Vuitton – “You know that this man has
+                  sailed the worlds toughest seas – no one else could produce
+                  pictures of this calibre.”
                 </p>
               </Fade>
             </div>
