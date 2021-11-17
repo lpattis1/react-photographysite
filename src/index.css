@@ -1,13 +1,493 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global */
+/* body {
+  overflow: hidden;
+} */
+
+/* Loading */
+.loading-bg {
+  background: black;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.3s linear opacity;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.loading-bg-hide {
+  opacity: 0;
+}
+
+.logo-title {
+  color: white;
+  font-size: 9rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+/* Homepage */
+#home {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: 1rem solid white;
+  overflow: hidden !important;
+}
+
+.home-title {
+  text-shadow: 2px 2px rgb(0 0 0 / 20%);
+  font-size: 8rem;
+}
+
+#home .menu-nav {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#home .nav-bars {
+  color: white;
+  fill: white;
+}
+
+#home .nav-bars:hover {
+  fill: black;
+  transition: 0.3s ease-in-out;
+}
+
+#home .bars {
+  color: white;
+}
+
+.home-description {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Cutive Mono", monospace;
+  background: black;
+  padding: 0.5rem;
+}
+
+/* Menu */
+.directory-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/3TAn6Js.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden !important;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px rgb(0 0 0 / 20%);
+}
+
+.logo:hover {
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.close-icon:hover {
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-row {
+  margin-top: 5rem !important;
+}
+
+.menu-col {
+  border-right: 0.1rem dotted white;
+  height: 15rem;
+  cursor: pointer;
+}
+
+.menu-link {
+  font-family: "Cutive Mono", monospace;
+  font-size: 3rem;
+  color: white;
+}
+
+.menu-link-direct {
+  text-decoration: none;
+  color: white;
+}
+
+.ending-link {
+  border-right: none !important;
+}
+
+.menu-col:hover {
+  background: rgba(255, 255, 255, 0.342);
+  transition: 0.3s ease-in-out;
+}
+
+.menu-link-direct:hover {
+  color: black !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* Men category */
+
+.loading {
+  transform: translateY(600%);
+}
+
+.slider {
+  margin-top: 6rem;
+}
+
+.men-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+.gallery-box {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-img:hover {
+  filter: invert(80%);
+  transition: 0.3s ease-in-out;
+}
+
+#men {
+  position: relative !important;
+}
+
+#men .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#men .menu-nav {
+  cursor: pointer;
+}
+
+#men .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+/* Women category */
+
+#women {
+  position: relative !important;
+}
+
+#women .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#women .menu-nav {
+  cursor: pointer;
+}
+
+#women .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.women-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+/* Animals category */
+
+#animals {
+  position: relative !important;
+}
+
+#animals .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#animals .menu-nav {
+  cursor: pointer;
+}
+
+#animals .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.animals-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+/* Scenic category */
+
+#scenic {
+  position: relative !important;
+}
+
+#scenic .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#scenic .menu-nav {
+  cursor: pointer;
+}
+
+#scenic .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.scenic-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+/* Films */
+
+#films {
+  position: relative !important;
+}
+
+#films .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#films .menu-nav {
+  cursor: pointer;
+}
+
+#films .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.films-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+.film-header {
+  margin-bottom: 5rem;
+}
+
+.header-vid:hover {
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.vid-text {
+  margin-top: 6rem;
+}
+
+.film-header-title {
+  text-transform: uppercase;
+  color: white;
+  margin: auto;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.film-description-one {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  line-height: 1.7rem;
+}
+
+.view-films-btn {
+  background: black;
+  border: none;
+  padding: 1rem 3rem;
+  color: white;
+  margin-bottom: 4rem;
+  font-family: "Cutive Mono", monospace;
+}
+
+.btn-icon {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.view-films-jump {
+  color: white;
+  text-decoration: none;
+}
+.view-films-jump:hover {
+  color: white;
+}
+
+.showreel {
+  margin-top: 10rem !important;
+}
+
+.latest-video {
+  height: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* About */
+
+#about {
+  position: relative !important;
+}
+
+#about .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#about .menu-nav {
+  cursor: pointer;
+}
+
+#about .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.about-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+.fade-in-about {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.fade-out-about {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.about-section {
+  margin-top: 6rem;
+}
+
+.about-kcm {
+  font-size: 1.6rem;
+  font-family: "Cutive Mono", monospace;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.entrance-text {
+  margin-top: 10rem;
+  text-transform: uppercase;
+  font-family: "Cutive Mono", monospace;
+  font-size: 5rem;
+}
+
+/* Contact */
+
+#contact {
+  position: relative !important;
+}
+
+#contact .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#contact .menu-nav {
+  cursor: pointer;
+}
+
+#contact .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.contact-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+.contact-title {
+  margin-top: 5rem;
+  font-weight: 500;
+
+  margin-bottom: 6.5rem;
+}
+
+.general-title {
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  margin-bottom: 2rem !important;
+}
+
+.general-item {
+  font-family: "Cutive Mono", monospace;
+}
+
+.contact-img,
+.contact-img-area {
+  z-index: -1;
+}
+
+/* Ads */
+
+#ads {
+  position: relative !important;
+}
+
+#ads .nav-bars {
+  color: black;
+  fill: black;
+}
+
+#ads .menu-nav {
+  cursor: pointer;
+}
+
+#ads .nav-bars:hover {
+  fill: rgb(121, 119, 119);
+  transition: 0.3s ease-in-out;
+}
+
+.advertisement-text {
+  margin-right: 2rem;
+  font-weight: 400;
+}
+
+/* Footer */
+
+.footer-show {
+  display: flex;
+  background: black;
+  padding: 1rem;
+  font-family: "Cutive Mono", monospace;
+  margin-top: 3rem;
+}
+
+.footer-hide {
+  display: none;
 }
