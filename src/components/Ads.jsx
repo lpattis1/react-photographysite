@@ -112,7 +112,7 @@ const Ads = () => {
                   <div className="gallery-box">
                     <a
                       data-fancybox="gallery"
-                      data-caption="Group"
+                      data-caption="Commercial Group"
                       href="https://images.pexels.com/photos/5325589/pexels-photo-5325589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                     >
                       <img
