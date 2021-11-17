@@ -45,6 +45,7 @@ const Home = () => {
         style={{
           backgroundImage: `url(${bg})`,
           backgroundPosition: "center",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           overflow: "hidden",
         }}

@@ -356,6 +356,7 @@
 
 #about {
   position: relative !important;
+  height: 100vh;
 }
 
 #about .nav-bars {
@@ -409,6 +410,7 @@
 
 #contact {
   position: relative !important;
+  height: 100vh;
 }
 
 #contact .nav-bars {

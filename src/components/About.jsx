@@ -63,15 +63,7 @@ const About = () => {
                 </p>
                 <p className="about-kcm-three about-kcm">
                   Behind the sheer beauty of his images, there is a cerebral
-                  layer of personal experience which informs all he does. As one
-                  onlooker commented after seeing his Paris “Winds and Sails”
-                  exhibition for Louis Vuitton – “You know that this man has
-                  sailed the worlds toughest seas – no one else could produce
-                  pictures of this calibre.”
-                </p>
-                <p className="about-kcm-four about-kcm">
-                  From Vogue covers to Bentley adverts – it’s more than just the
-                  photograph. KCM infuses his work with his own lust for life.
+                  layer of personal experience which informs all he does.
                 </p>
               </Fade>
             </div>
