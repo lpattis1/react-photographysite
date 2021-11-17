@@ -8,17 +8,14 @@ import "@fancyapps/ui/dist/fancybox.css";
 const About = () => {
   const [menuState, setMenuState] = useState(false);
   const [menuOpacity, setMenuOpacity] = useState(0);
-  const [footerDisplay, setFooterDisplay] = useState(true);
 
   const toggleMenu = (e) => {
     if (!menuState) {
-      setFooterDisplay(false);
       setMenuState(true);
       setTimeout(() => {
         setMenuOpacity(1);
       }, 500);
     } else {
-      setFooterDisplay(true);
       setMenuOpacity(0);
       setTimeout(() => {
         setMenuState(false);
@@ -81,7 +78,6 @@ const About = () => {
           />
         </div>
       </Fade>
-      <Footer showFooter={footerDisplay} />
     </>
   );
 };
