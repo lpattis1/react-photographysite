@@ -59,6 +59,7 @@ const Films = () => {
                 right: "0",
                 objectFit: "cover",
                 zIndex: -1,
+                overflowY: "hidden",
               }}
             >
               <source src="https://i.imgur.com/IxLP3y7.mp4" type="video/mp4" />

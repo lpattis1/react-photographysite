@@ -84,7 +84,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: hidden !important;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -505,4 +505,218 @@
 
 .footer-hide {
   display: none;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 995px) {
+  .logo-title {
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .home-title {
+    font-size: 5rem;
+  }
+
+  .home-description {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: "Cutive Mono", monospace;
+    background: black;
+    padding: 0.4rem;
+  }
+
+  #home .menu-nav {
+    right: 3.5rem;
+  }
+
+  .directory-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 105vh;
+    background-image: url("https://i.imgur.com/3TAn6Js.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto !important;
+  }
+
+  .menu-col {
+    border-right: none;
+    border-bottom: 0.1rem dotted white;
+    height: 15rem;
+    cursor: pointer;
+  }
+
+  .film-header-title {
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .view-films-btn {
+    background: black;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    margin-bottom: 4rem;
+    font-family: "Cutive Mono", monospace;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .latest-video {
+    height: 18rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .film-header-title {
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .film-description-one {
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .view-films-btn {
+    background: black;
+    border: none;
+    padding: 1rem 1.6rem;
+    color: white;
+    margin-bottom: 4rem;
+    font-family: "Cutive Mono", monospace;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .latest-video {
+    height: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .latest-video {
+    height: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .latest-video {
+    height: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 553px) {
+  .logo-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .home-title {
+    font-size: 4rem;
+  }
+
+  .home-description {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: "Cutive Mono", monospace;
+    background: black;
+    padding: 0.3rem;
+  }
+
+  #home .menu-nav {
+    right: 3rem;
+  }
+
+  .men-text,
+  .women-text,
+  .animals-text,
+  .contact-text,
+  .scenic-text,
+  .advertisement-text,
+  .films-text {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 507px) {
+  .logo-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-description {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Cutive Mono", monospace;
+    background: black;
+    padding: 0.2rem;
+  }
+
+  #home .menu-nav {
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .logo-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: "Cutive Mono", monospace;
+    background: black;
+    padding: 0.2rem;
+  }
+
+  #home .menu-nav {
+    right: 2rem;
+  }
 }

@@ -9,7 +9,6 @@ const Menu = (props) => {
         transform: `translateY(${props.slider})`,
         transition: props.trans,
         opacity: props.opac,
-        overflow: "hidden",
       }}
       className="directory-menu"
     >
@@ -25,7 +24,10 @@ const Menu = (props) => {
             className="close-icon align-self-center"
           />
         </div>
-        <div className="row gx-5 menu-row mt-3 m-auto d-flex justify-content-center">
+        <div
+          id="m-row"
+          className="row gx-5 menu-row mt-3 m-auto d-flex justify-content-center"
+        >
           <div className="col col-lg-3 col-12 menu-col d-flex justify-content-center align-items-center">
             <div className="menu-link text-center">
               <Link className="men menu-link-direct" exact to="/men">
