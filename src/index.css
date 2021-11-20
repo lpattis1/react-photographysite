@@ -615,6 +615,13 @@
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+
+  .about-kcm {
+    font-size: 1.3rem;
+    font-family: "Cutive Mono", monospace;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -630,6 +637,13 @@
     height: 9rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+
+  .about-kcm {
+    font-size: 1.1rem;
+    font-family: "Cutive Mono", monospace;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -664,7 +678,8 @@
   .contact-text,
   .scenic-text,
   .advertisement-text,
-  .films-text {
+  .films-text,
+  .about-text {
     display: none !important;
   }
 }
